@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+    /*
     fun processLogin(user_name:String, password:String){
         val intent = Intent(this, SuccessLogin::class.java)
         intent.putExtra("user", user_name)
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(applicationContext, "Logging you in...!",Toast.LENGTH_SHORT).show()
         startActivity(intent)
     }
+
+     */
     /*
 
     var uName = etUName.text.toString()
