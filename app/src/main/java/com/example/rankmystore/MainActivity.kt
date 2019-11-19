@@ -9,32 +9,38 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast
-
+import android.view.View.OnClickListener
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
-    /*
-    fun processLogin(user_name:String, password:String){
-        val intent = Intent(this, SuccessLogin::class.java)
-        intent.putExtra("user", user_name)
-        intent.putExtra("pass",password)
-        Toast.makeText(applicationContext, "Logging you in...!",Toast.LENGTH_SHORT).show()
-        startActivity(intent)
+        /*
+        var input_user_name = findViewById<View>(R.id.input_user_name) as EditText
+        var input_password = findViewById<View>(R.id.input_password) as EditText
+        var btn_reset = findViewById<View>(R.id.btn_reset) as Button
+
+        var btn_submit = findViewById<View>(R.id.btn_submit) as Button
+
+        btn_reset.setOnClickListener{
+            input_user_name.setText("")
+            input_password.setText("")
+        }
+        btn_submit.setOnClickListener{
+            val user_name = input_user_name.text
+            val password = input_password.text
+            Toast.makeText(this@MainActivity,  user_name,Toast.LENGTH_LONG).show()
+        }
+
+         */
     }
 
-     */
-    /*
 
-    var uName = etUName.text.toString()
-        var uPwd = etUPass.text.toString()
-        var pwd = uName + "@123"
-     */
-    fun checkLogin(view: View){
-       // var uName =
-    }
+
+
+
+
+
 }
 
 
